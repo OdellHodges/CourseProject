@@ -28,6 +28,23 @@ namespace SiteThatShallNotBeNamedYet.Controllers
             return View();
         }
 
+        public IActionResult SignUp()
+        {
+            ViewBag.Message = "User Sign Up";
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult SignUp(Login login)
+        {
+            if (ModelState.IsValid)
+            {
+                return RedirectToAction("Sign Up");
+            }
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

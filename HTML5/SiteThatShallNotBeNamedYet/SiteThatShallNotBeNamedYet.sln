@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiteThatShallNotBeNamedYet", "SiteThatShallNotBeNamedYet\SiteThatShallNotBeNamedYet.csproj", "{BC4843B7-A496-4B1A-A476-6B36AE942565}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SiteThatShallNotBeNamedYet", "SiteThatShallNotBeNamedYet\SiteThatShallNotBeNamedYet.csproj", "{BC4843B7-A496-4B1A-A476-6B36AE942565}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MVCDemoDB", "MVCDemoDB\MVCDemoDB.sqlproj", "{23445EBD-EB35-4294-82A1-148A49488056}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,12 @@ Global
 		{BC4843B7-A496-4B1A-A476-6B36AE942565}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC4843B7-A496-4B1A-A476-6B36AE942565}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC4843B7-A496-4B1A-A476-6B36AE942565}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23445EBD-EB35-4294-82A1-148A49488056}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23445EBD-EB35-4294-82A1-148A49488056}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23445EBD-EB35-4294-82A1-148A49488056}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{23445EBD-EB35-4294-82A1-148A49488056}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23445EBD-EB35-4294-82A1-148A49488056}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23445EBD-EB35-4294-82A1-148A49488056}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

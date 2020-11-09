@@ -58,9 +58,11 @@ html {
   min-height: 100%;
 }
 
-body {
+body 
+{
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  
 }
 .footer {
   position: absolute;
@@ -68,4 +70,167 @@ body {
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
+}
+.navbar
+{
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navbar a 
+{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+}
+.navbar a:hover 
+{
+    background: #ddd;
+    color: black;
+}
+
+.section-1 {
+    width: 100%;
+    height: 64px;
+    background-color: white;
+    z-index: 1000;
+}
+
+.container {
+    float: right;
+    width: 300px;
+    border: 10px ;
+    padding: 10px;
+    height: 300px;
+}
+
+.section-2
+{
+    width: 100%;
+    height: 300px;
+    background-color: dimgray;
+    z-index: 1000;
+}
+
+.container-2 {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 0px;
+    float: left;
+    width: 80%;
+}
+input[type=text] {
+    width: 80%;
+    padding: 12px;
+    font-family: 'Times New Roman';
+    font-size: 18px;
+    border: 2px solid #0076a3;
+    border-right: 0;
+    border-radius: 5px 0 0 5px;
+    font-style: italic;
+    float: left;
+    text-align: center;
+}
+input[type=submit]{
+    position: absolute;
+    padding: 12px;
+    width: 10%;
+    font-family: 'Times New Roman';
+    font-size: 18px;
+    border: 2px solid #0076a3;
+    border-right: 0;
+    border-radius: 5px 0 0 5px;
+    font-style: italic;
+    float: left;
+    text-align: center;
+}
+.h1
+{
+    font-family: 'Times New Roman';
+    font-size: 48px;
+    text-align: center;
+    text-decoration-color: white;
+}
+.section-3
+{
+    background-image: url("'../img/Iraq2 (2).jpg'");
+    background-color: #cccccc;
+}
+.container-3 {
+    max-width: 50%;
+    margin: auto;
+    margin-top: 0px;
+    float: left;
+    width: 100%;
+    height: auto;
+}
+img {
+    width: 160%;
+    height: 90%;
+    border: 5px solid black;
+}
+.container-4 
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.Sidebar
+{
+    position: absolute;
+    right: 0;
+    width: 382px;
+    height: 100%;
+    background: #042331;
+
+}
+.Sidebar header
+{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: #063146;
+    user-select: none;
+
+}
+.Sidebar ul
+{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 80px;
+    font-size: 20px;
+    color: white;
+    padding-left: 50px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    text-align: center;
+    border: 1px solid black;
+}
+.section-4 
+{
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    align-content: center;
+}
+.ForumPosts {
+    height: 400px;
+    width: 1000px;
+    position: absolute;
+    top: 100%;
+    line-height: 16px;
+    font-size: 10px;
+    align-content: center;
+    background-color: dimgray;
+    border: 5px solid black;
+    box-sizing: border-box;
 }

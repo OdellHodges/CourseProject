@@ -1,19 +1,94 @@
 ﻿<!DOCTYPE html>
-
+@section SignUp
+{
+    @RenderSection("SignUp", false)
+}
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>Odell's Project</title>
+    @*<meta charset="utf-8" />
+        <title>Odell's Project</title>*@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="StyleSheet.css" />
-    <style>
-        body {
-            background-color: lightgrey;
-        }
-    </style>
-    @RenderBody();
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
 
+    <section class="section-1">
+        <div class="navbar">
+            @Html.ActionLink("Home", "Index", "Home")
+            @Html.ActionLink("Sign Up", "SignUp", "Home")
+            @Html.ActionLink("About Us", "AboutUs", "Home")
+            @Html.ActionLink("References", "Refs", "Home")
+
+        </div>
+
+    </section>
+
+    <section class="section-2">
+
+        <div class="container">
+            <i class="fas fa-user-circle fa-10x"></i>
+            <div class="overlay">
+                <button type="button" class="btn btn-primary btn-group-lg"><i class="fas fa-user"></i>Register</button>
+                <button type="button" class="btn btn-secondary btn-group-lg"><i class="fas fa-user"></i>Login</button>
+            </div>
+        </div>
+
+        <div class="container-2">
+            <h1 style="text-emphasis-color:white">
+                <strong>General Questions</strong>
+            </h1>
+            <form>
+                <input type="text" name="search" placeholder="Search.." />
+                <input type="submit" value="Search" />
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <section class="section-3">
+
+        <div class="container-3">
+            <img src="~/img/Iraq2 (2).jpg" alt="iraq_msg_detachment" />
+
+            
+        </div>
+
+        <div class="container-4">
+            <div class="Sidebar">
+                <header>Branches of Service</header>
+                <ul id="myMenu">
+                    <li><a href="https://www.marines.mil/" class="fas fa-user fa-5x"></a></li>
+                    <li><a href="https://www.army.mil/" class="far fa-user fa-5x"></a></li>
+                    <li><a href="https://www.navy.mil/" class="fas fa-anchor fa-5x"></a></li>
+                    <li><a href="https://www.uscg.mil/" class="far fa-user fa-5x"></a></li>
+                    <li><a href="https://www.spaceforce.mil/" class="fas fa-user fa-5x"></a></li>
+                    <li><a href="https://www.spaceforce.mil/" class="far fa-user fa-5x"></a></li>
+                </ul>
+            </div>
+        </div>
+
+
+    </section>
+
+    <div class='ForumPosts'>
+        <section class="section-5">
+            <form action="/" method="post">
+                <div class= 'Forum Post'></div>'
+                <h3>Welcome</h3>
+                <input type'hidden' id='userid' value=" "/>
+                <input type="text" name="text" value='' placeholder='New Forum Topic' />
+                <input type="submit" name="submit" value="Post" />
+            </form>
+        </section>
+    </div>
+    @RenderBody()
+    @if(IsSectionDefined("Scripts"))
+    {
+        @RenderSection("Scripts")
+    }
 </body>
 </html>
